@@ -1,0 +1,30 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/haskell:2": {
+			"installHLS": true,
+			"downgradeGhcToSupportHls": true,
+			"installStack": true,
+			"installStackGHCupHook": true,
+			"adjustBash": true,
+			"ghcVersion": "latest",
+			"cabalVersion": "latest",
+			"globalPackages": "hlint hspec pandoc"
+		},
+		"ghcr.io/devcontainers-contrib/features/sbt-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "17",
+			"jdkDistro": "tem"
+		},
+		"ghcr.io/devcontainers-contrib/features/scala-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "17",
+			"jdkDistro": "tem"
+		},
+		"ghcr.io/devcontainers-contrib/features/scalacli-sdkman:2": {
+			"version": "latest",
+			"jdkVersion": "17",
+			"jdkDistro": "tem"
+		}
+	}
+}
